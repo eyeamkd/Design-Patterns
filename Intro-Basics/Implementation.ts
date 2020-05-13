@@ -9,7 +9,7 @@ class Implementation {
 
         this.mallardDuck.display(); 
         this.rubberDuck.display();
-        this.mallardDuck.fly(); 
+        // this.mallardDuck.fly(); 
         // this.rubberDuck.fly(); 
     } 
 

@@ -1,11 +1,5 @@
 import {Duck, Flyable, Quakable} from './Duck'; 
+import { Quack } from './Quack';
 
-export class MallardDuck extends Duck implements Quakable, Flyable{ 
-    fly(){ 
-
-    } 
-
-    Quack(){ 
-
-    } 
+export class MallardDuck extends Duck{ 
 }
