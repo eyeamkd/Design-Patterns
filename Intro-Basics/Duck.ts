@@ -4,9 +4,9 @@ export class Duck{
         this.species = species;
     }
 
-    public quack(){ 
-
-    } 
+    // public quack(){ 
+        //implemented interface
+    // } 
 
     public swim(){ 
 
@@ -16,8 +16,17 @@ export class Duck{
         console.log("Looks like a ",this.species);
     } 
 
-    public fly(){ 
-        console.log("Duck Flying");
-    }
+    // public fly(){ 
+    //     console.log("Duck Flying");
+    // } 
+
 } 
+
+export interface Flyable{  
+        fly() : void;  
+} 
+
+export interface Quakable{ 
+        Quack():void; 
+}
 

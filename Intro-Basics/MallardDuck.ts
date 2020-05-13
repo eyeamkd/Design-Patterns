@@ -1,7 +1,11 @@
-import {Duck} from './Duck'; 
+import {Duck, Flyable, Quakable} from './Duck'; 
 
-export class MallardDuck extends Duck{ 
+export class MallardDuck extends Duck implements Quakable, Flyable{ 
     fly(){ 
-        console.log("Mallard Duck Flying");
-    }
+
+    } 
+
+    Quack(){ 
+
+    } 
 }
