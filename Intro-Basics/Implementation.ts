@@ -1,17 +1,11 @@
 import { MallardDuck} from  './MallardDuck';  
 import { RubberDuck} from  './RubberDuck'; 
+import { SmoothFly } from './FlyBehaviours';
 
-class Implementation { 
-    mallardDuck : MallardDuck;  
-    rubberDuck : RubberDuck;
-    constructor(){ 
-        this.mallardDuck = new MallardDuck("mallard");  
-
-        this.mallardDuck.display(); 
-        this.rubberDuck.display();
-        // this.mallardDuck.fly(); 
-        // this.rubberDuck.fly(); 
-    } 
-
-    
-} 
+let mallardDuck  = new MallardDuck();  
+console.log("----INITIAL FLY BEHAVIOUR-----"); 
+mallardDuck.performFly();  
+console.log("----FLY BEHAVIOUR AFTER RUNNING SETTER-----");   
+mallardDuck.flyBehaviourSetter(new SmoothFly()); 
+mallardDuck.performFly();  
+mallardDuck.performQuack();
