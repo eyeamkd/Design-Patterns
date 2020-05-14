@@ -10,7 +10,7 @@
 
  - Whenever you need to get the best out of the Interfaces and Inheritance, remember the above point. Make each Behaviour as an Interface, for example : *WheelFeature* is another Interface which makes it mandatory for the chair to have wheels, But any even office chair and the chair use to carry patients at the hospital (wheel chair) has wheels. So we create a *RotatableChair* Class that implements the above interface. And Office Chair can Inherit this Class.   
 
-====== 
+
 
  ## Code Explanation : Interface -- Inheritance Design Pattern 
 
@@ -20,7 +20,7 @@
 
  - flyable variable must support the implementation of fly interface, hence, we can initialize that variable in the sub-class with the particular  FlyBehaviour that we want. Importing it from the FlyBehaviour.ts file. 
 
-====== 
+
 
  ## Code Explanation : Composition Pattern 
 
@@ -36,7 +36,7 @@
 
  - This practice, of using two or more classes without extending them in a single class is called Composting.  
 
-====== 
+
 
  ### Conclusion   
 
