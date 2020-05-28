@@ -8,7 +8,7 @@
 
  - So, It is a Good Practice to separate the parts of the code that are susceptible to change and the parts that aren't. For Example, the structure of the Chair, that attributes to it having Four Legs and Two Hand-Rests, is common across all the chair models and isn't going to change, but the Back-Rest, Color, Material are all Dynamic Properties when observed from a view point of a Chair Class. 
 
- - Whenever you need to get the best out of the Interfaces and Inheritance, remember the above point. Make each Behaviour as an Interface, for example : *WheelFeature* is another Interface which makes it mandatory for the chair to have wheels, But any even office chair and the chair use to carry patients at the hospital (wheel chair) has wheels. So we create a *RotatableChair* Class that implements the above interface. And Office Chair can Inherit this Class.   
+ - Whenever you need to get the best out of the Interfaces and Inheritance, remember the above point. Make each Behaviour as an Interface, for example : *WheelFeature* is another Interface which makes it mandatory for the chair to have wheels, But any office chair and the chair use to carry patients at the hospital (wheel chair) has wheels. So we create a *RotatableChair* Class that implements the above interface. And Office Chair can Inherit this Class.   
 
 
 

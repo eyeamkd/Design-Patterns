@@ -1,7 +1,7 @@
 export interface Subject{ 
-    registerObserver(): Boolean; 
-    removeObserver(): Boolean; 
-    notifyObserver(): void; 
+    registerObserver(observer : Observer); 
+    removeObserver(observer : Observer); 
+    notifyObserver(observer : Observer); 
 } 
 
 export interface Observer{ 
