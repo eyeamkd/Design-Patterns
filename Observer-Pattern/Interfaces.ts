@@ -1,10 +1,14 @@
 export interface Subject{ 
     registerObserver(observer : Observer); 
     removeObserver(observer : Observer); 
-    notifyObserver(observer : Observer); 
+    notifyObservers(); 
 } 
 
 export interface Observer{ 
-    update(): void; 
-} 
+    update(temperature : number, humidity: number, pressure: number): void; 
+}  
+
+export interface WeatherDisplayElement{ 
+    display(): void;
+}
 
