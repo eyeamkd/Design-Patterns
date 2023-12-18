@@ -8,3 +8,5 @@ const engineDecorator: EngineDecorator = new EngineDecorator(car);
 const carModelDecorator: CarModelDecorator = new CarModelDecorator(car);
 car = engineDecorator.addV8Engine();
 car = carModelDecorator.makeSedan();
+
+const newCar = car.clone();
